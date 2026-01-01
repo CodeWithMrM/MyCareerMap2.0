@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers | MyCareerMap</title>
+    <link rel="stylesheet" href="/Css/careerList.css" />
+</head>
+
+<body>
+
+    <header class="page-header">
+        <a href="/index.html">MyCareerMap</a>
+        <h1>Explore Careers</h1>
+        <p>Find careers based on your subjects and interests.</p>
+    </header>
+
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search careers..." />
+
+        <select id="fieldFilter">
+            <option value="all">All Fields</option>
+            <option value="it">IT</option>
+            <option value="engineering">Engineering</option>
+            <option value="health">Health</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+            <option value="science">Science</option>
+            <option value="education">Education</option>
+            <option value="law">Law</option>
+            <option value="finance">Finance</option>
+            <option value="hospitality">Hospitality</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="transport">Transport</option>
+            <option value="manufacturing">Manufacturing</option>
+            <option value="security">Security</option>
+            <option value="social-science">Social-science</option>
+            <option value="marketing">Marketing</option>
+            <option value="trades">Trades</option>
+            <option value="public-services">Public-services</option>
+            <option value="mining">Mining</option>
+            <option value="aviation">Aviation</option>
+            <option value="veterinary">Veterinary</option>
+            <option value="beauty">Beauty</option>
+            <option value="sports">Sports</option>
+            <option value="creative-tech">Creative-Tech</option>
+
+            <!-- Newly added fields -->
+            <option value="energy">Energy &amp; Utilities</option>
+            <option value="telecoms">Telecommunications</option>
+            <option value="retail">Retail &amp; E-commerce</option>
+            <option value="insurance">Insurance &amp; Risk</option>
+            <option value="real-estate">Real Estate &amp; Property</option>
+            <option value="construction">Construction</option>
+            <option value="automotive">Automotive &amp; Transport Maintenance</option>
+            <option value="non-profit">Non-profit / Community Development</option>
+            <option value="legal-support">Legal Support &amp; Paralegal</option>
+        </select>
+    </section>
+
+    <section class="career-grid" id="careerGrid"></section>
+
+    <footer>
+        <a href="">About</a>
+        <p>&copy; 2025 MyCareerMap. All rights reserved.</p>
+        <div class="version">
+            <p>Version 0.0.1</p>
+        </div>
+    </footer>
+    <script src="/Data/career.js"></script>
+    <script src="/JavaScript/careers-page.js"></script>
+</body>
+
+</html>

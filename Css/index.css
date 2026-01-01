@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+/* Navbar */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+  min-height: 80vh;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #0b132b, #1c2d5a);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn.primary {
+  background: #ff7a18;
+  color: white;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn.primary:hover {
+  background: #ff9e4a;
+}
+
+.btn.secondary:hover {
+  background: white;
+  color: #0b132b;
+}
+
+/* Hero Card */
+.hero-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 40px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.hero-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-card p {
+  font-size: 0.95rem;
+}
+
+/* About Section */
+.about {
+  padding: 80px 40px;
+  text-align: center;
+  background-color: white;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.05rem;
+  color: #334155;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #e5e7eb;
+  padding: 16px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #0b132b;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+footer a {
+  color: #ff7a18;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .version {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  /* Mobile: show nav links inline so there's no burger menu */
+  .nav-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    position: static;
+    height: auto;
+    width: auto;
+    background: transparent;
+    padding-top: 0;
+    transform: none;
+    transition: none;
+    z-index: auto;
+    pointer-events: auto;
+    justify-content: flex-end;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links li a {
+    font-size: 0.95rem;
+  }
+}

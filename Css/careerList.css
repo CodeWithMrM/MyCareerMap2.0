@@ -1,0 +1,104 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    padding: 60px 40px 30px;
+    background: linear-gradient(135deg, #0b132b, #1c2d5a);
+    color: white;
+}
+
+.page-header a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 16px;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.controls input,
+.controls select {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #cbd5f5;
+    font-size: 0.95rem;
+}
+
+/* Grid */
+.career-grid {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.career-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-4px);
+}
+
+.career-card h3 {
+    margin-bottom: 10px;
+}
+
+.career-card p {
+    font-size: 0.95rem;
+    color: #475569;
+}
+
+.field-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+footer {
+  background-color: #0b132b;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+footer a {
+  color: #ff7a18;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .version {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
